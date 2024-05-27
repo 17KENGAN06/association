@@ -1,0 +1,10 @@
+.divider {
+	height: 150px;
+	width: 2px;
+	background: var(--black);
+
+	@include mobile {
+		height: 1px;
+		width: 100%;
+	}
+}

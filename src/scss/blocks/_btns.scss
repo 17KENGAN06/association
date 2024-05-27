@@ -1,0 +1,76 @@
+.btn--main {
+	background: var(--green);
+	height: 52px;
+
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 150%;
+	letter-spacing: 0.01em;
+	text-align: center;
+	color: var(--black);
+	border-radius: var(--border-radius-18);
+
+	&:hover {
+		background: var(--green-hover);
+		transition: all 0.2s ease-in;
+	}
+
+	&:active {
+		background: var(--green-active);
+		transition: all 0.2s ease-in;
+	}
+
+	&-big {
+		padding: 14px 32px;
+
+		@include tablet {
+			padding: 14px 20px;
+		}
+
+		@include mobile {
+			font-size: 10px;
+			padding: 10px 16px;
+			height: 100%;
+		}
+	}
+
+	&-small {
+		padding: 10px 27px;
+	}
+}
+
+.btn--second {
+	background: var(--blue);
+	border-radius: 14px;
+	padding: 14px 32px;
+
+	letter-spacing: 0.01em;
+	text-align: center;
+	color: var(--white);
+
+	&:hover {
+		background: var(--blue-hover);
+		transition: all 0.2s ease-in;
+	}
+
+	&:active {
+		background: var(--blue-active);
+		transition: all 0.2s ease-in;
+	}
+
+	&-big {
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 150%;
+	}
+
+	&-small {
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 143%;
+
+		@include mobile {
+			padding: 10px 24px;
+		}
+	}
+}

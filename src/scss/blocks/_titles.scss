@@ -1,0 +1,28 @@
+.title-small {
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 150%;
+	text-align: center;
+	color: var(--black);
+
+	@include tablet-small {
+		font-size: 14px;
+	}
+}
+
+.title-big {
+	font-weight: 700;
+	font-size: 52px;
+	color: var(--black);
+
+	@include tablet-small {
+		font-size: 42px;
+	}
+
+	@include mobile {
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 129%;
+		color: var(--black);
+	}
+}

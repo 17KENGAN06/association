@@ -1,0 +1,19 @@
+.logo {
+	img {
+		width: 238px;
+		height: 64px;
+	}
+
+	@include mobile {
+		img {
+			width: 129px;
+			height: 34px;
+		}
+	}
+}
+
+.logo-tablet-small {
+	@include tablet-small {
+		display: none;
+	}
+}

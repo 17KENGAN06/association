@@ -1,0 +1,7 @@
+.nav__link {
+	&:hover {
+		svg {
+			fill: var(--blue-hover);
+		}
+	}
+}

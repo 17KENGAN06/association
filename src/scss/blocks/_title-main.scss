@@ -1,0 +1,24 @@
+.title-main {
+	margin: 0 auto;
+	border-radius: var(--border-radius-18);
+	padding: 10px 27px;
+	display: inline-block;
+	text-align: center;
+	background: var(--green);
+	margin-bottom: 28px;
+	transition: all 0.2s ease-in;
+
+	&:hover {
+		background: var(--green-hover);
+	}
+
+	@include tablet-small {
+		padding: 10px 16px;
+	}
+}
+
+.title-block {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

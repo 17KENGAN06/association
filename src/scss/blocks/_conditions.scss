@@ -1,0 +1,124 @@
+.conditions {
+	margin-bottom: 75px;
+
+	@include mobile {
+		margin-bottom: 50px;
+	}
+}
+
+.conditions__wrapper {
+	display: flex;
+	justify-content: space-between;
+	gap: 111px;
+
+	@include tablet-small {
+		flex-direction: column;
+		gap: 50px;
+	}
+}
+.conditions__block-mod-second {
+	display: flex;
+	justify-content: center;
+
+	@include mobile {
+		justify-content: start;
+	}
+}
+
+.conditions__block-mod-first {
+	flex-shrink: 0;
+}
+.conditions__title-mod {
+	padding-top: 48px;
+}
+.conditions__questions {
+	padding-top: 32px;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+.conditions__questions-item {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 133%;
+	letter-spacing: 0.01em;
+	color: var(--grey);
+
+	@include mobile {
+		font-size: 16px;
+		line-height: 150%;
+		letter-spacing: 0.03em;
+	}
+}
+.conditions__questions-item-active {
+	color: var(--black);
+}
+.conditions__answers {
+	max-width: 774px;
+}
+.conditions__answers-item {
+	border-top: 1px solid var(--green);
+	display: flex;
+	justify-content: space-between;
+	gap: 114px;
+	padding-top: 48px;
+	padding-bottom: 80px;
+
+	@include mobile {
+		flex-direction: column;
+		gap: 24px;
+		padding-top: 17px;
+		padding-bottom: 32px;
+	}
+}
+.conditions__answers__title {
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 125%;
+	color: var(--black);
+	width: 285px;
+
+	@include mobile {
+		width: 100%;
+	}
+}
+.conditions__answers__subtitle {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 133%;
+	letter-spacing: 0.01em;
+	color: var(--grey-dark);
+	max-width: 375px;
+
+	@include mobile {
+		max-width: 100%;
+	}
+
+	@include mobile {
+		font-size: 16px;
+		line-height: 150%;
+		letter-spacing: 0.03em;
+		width: 100%;
+	}
+
+	ul {
+		position: relative;
+		li::before {
+			content: '';
+			position: absolute;
+			background: var(--grey-dark);
+			display: block;
+			width: 6px;
+			height: 6px;
+			left: -15px;
+			margin-top: 8px;
+			border-radius: 50%;
+		}
+	}
+}
+
+.conditions__answers__subtitle-mod {
+	@include mobile {
+		padding-left: 15px;
+	}
+}
