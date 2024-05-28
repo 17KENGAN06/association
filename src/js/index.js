@@ -2,24 +2,20 @@ import Swiper from 'swiper/bundle'
 import 'swiper/css/bundle'
 
 const swiper = new Swiper('.swiper', {
-	slidesPerView: 4,
+	slidesPerView: 6,
 	spaceBetween: 57,
-
-	// If we need pagination
-	// pagination: {
-	// 	el: '.swiper-pagination',
-	// },
+	centeredSlides: true,
+	loop: true,
+	slidesPerGroup: 1,
+	paginationClickable: true,
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
 	breakpoints: {
-		1400: {
-			slidesPerView: 3,
-			spaceBetween: 14,
-		},
-		920: {
-			slidesPerView: 3,
-		},
-		520: {
+		820: {
 			slidesPerView: 2,
-			spaceBetween: 7,
+			spaceBetween: 24,
 		},
 	},
 })
